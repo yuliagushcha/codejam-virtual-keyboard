@@ -1,0 +1,60 @@
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Bradley Hand", cursive;
+}
+
+.keyboard {
+    width: 73%;
+    margin: 0 auto;
+}
+.keyboard .row {
+    display: flex;
+    clear: both;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 8px;
+}
+.keyboard .key {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: 6px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background: dimgray;
+    border-radius: 3px;
+    box-shadow: 0 0 9px #000;
+    cursor: pointer;
+    user-select: none;
+    transition: all .2s ease;
+}
+
+.keyboard .key:hover {
+    cursor: pointer;
+    background: lightblue;
+    color: darkblue;
+    box-shadow: 0 0 9px #fff;
+}
+
+.keyboard .key.active {
+    background-color: lightblue;
+    color: darkblue;
+    border-radius: 50%;
+    box-shadow: 0 0 9px #fff;
+}
