@@ -19,7 +19,7 @@
 
 .keyboard {
     width: 73%;
-    margin: 0 auto;
+    margin: 5% auto;
 }
 .keyboard .row {
     display: flex;
@@ -40,6 +40,7 @@
     background: dimgray;
     border-radius: 3px;
     box-shadow: 0 0 9px #000;
+    overflow: hidden;
     cursor: pointer;
     user-select: none;
     transition: all .2s ease;
@@ -48,13 +49,13 @@
 .keyboard .key:hover {
     cursor: pointer;
     background: lightblue;
-    color: darkblue;
+    color: black;
     box-shadow: 0 0 9px #fff;
 }
 
 .keyboard .key.active {
     background-color: lightblue;
-    color: darkblue;
+    color: black;
     border-radius: 50%;
     box-shadow: 0 0 9px #fff;
 }
