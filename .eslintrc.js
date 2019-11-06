@@ -4,10 +4,25 @@ module.export = {
 		'airbnb-base',
 	],
 
+	parser: [
+		"babel-eslint",
+	],
+
 	env: {
 		browser: true,
 		es6: true,
 		node: true,
+        commonjs: true,
+	},
+
+	globals: {
+		Atomics: 'readonly',
+		SharedArrayBuffer: 'readonly',
+	},
+
+	parserOptions: {
+		ecmaVersion: 8,
+		sourceType: 'module',
 	},
 
 	rules: {
